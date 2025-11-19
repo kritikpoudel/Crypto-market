@@ -11,7 +11,7 @@ const CoinContextProvider = (props) => {
   const fetchAllCoin = async () => {
     const vsCurrency = currency.name === "npr" ? "inr" : currency.name;
     const url =
-      `https://api.coingecko.com/api/v3/coins/markets?vs_currency=${vsCurrency}&ids=bitcoin&names=Bitcoin&symbols=btc&category=layer-1&price_change_percentage=1h`;
+        `https://api.coingecko.com/api/v3/coins/markets?vs_currency=${vsCurrency}&order=market_cap_desc&per_page=250&page=1&sparkline=false&price_change_percentage=1h`;
    const options = {
       method: "GET",
       headers: { "x-cg-demo-api-key": import.meta.env.VITE_API_KEY },
