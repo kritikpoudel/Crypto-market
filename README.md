@@ -9,7 +9,7 @@ Track live cryptocurrency prices, visualize historical trends with charts, and c
 
 - **Live Price Updates** – View real-time prices of cryptocurrencies.  
 - **Interactive Chart** – Historical price data displayed using Google Charts.  
-- **Currency Converter** – Switch between USD, EUR, INR, and NPR.  
+- **Currency Converter** – Switch between USD, EUR and NPR.  
 - **Search** – Quickly find any cryptocurrency.  
 - **Market Rank** – See the global market rank of each coin.  
 
