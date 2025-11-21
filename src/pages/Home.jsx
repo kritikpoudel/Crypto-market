@@ -1,5 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import { CoinContext } from "../context/CoinContext";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   const { allCoin, currency } = useContext(CoinContext);
@@ -66,7 +67,7 @@ export default function Home() {
           <p className="text-right hidden md:block">Market Cap</p>
         </div>
         {displayCoin.slice(0, 10).map((item, index) => (
-          <div
+          <Link to={`/coin/${item.id}`}
             className="grid md:grid-cols-[0.5fr_2fr_1fr_1fr_1.5fr] py-4 px-5 items-center border-b border-gray-400 last:border-b-0
             grid-cols-[0.5fr_3fr_1fr_1fr]"
             key={index}
@@ -79,7 +80,7 @@ export default function Home() {
             <p>{currency.symbol} {item.current_price.toLocaleString()}</p>
             <p className={`text-center ${item.price_change_percentage_24h < 0 ? "text-red-500" : "text-green-500"}`}>{Math.floor(item.price_change_percentage_24h*100)/100}</p>
             <p className="text-right hidden md:block">{currency.symbol} {item.market_cap.toLocaleString()}</p>
-          </div>
+          </Link>
         ))}
       </div>
     </div>

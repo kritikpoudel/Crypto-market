@@ -28,7 +28,7 @@ if (currency.name === "npr") {
   }));
 }
 
-      console.log(data);
+      // console.log(data);
       setAllCoin(data);
     } catch (error) {
       console.error(error);
