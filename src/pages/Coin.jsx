@@ -39,7 +39,7 @@ export default function Coin() {
   };
   const fetchHistoricalData = async () => {
     const vsCurrency = currency.name === "npr" ? "inr" : currency.name;
-    const url = `https://api.coingecko.com/api/v3/coins/${coinId}/market_chart?vs_currency=${vsCurrency}&days=10&interval=daily`;
+    const url = `https://api.coingecko.com/api/v3/coins/${coinId}/market_chart?vs_currency=${vsCurrency}&days=20&interval=daily`;
     const options = {
       method: "GET",
       headers: { "x-cg-demo-api-key": import.meta.env.VITE_API_KEY },
