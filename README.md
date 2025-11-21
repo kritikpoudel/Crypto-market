@@ -1,12 +1,23 @@
-# React + Vite
+# Crypto Market
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A **React-based cryptocurrency price tracker** using the [CoinGecko API](https://www.coingecko.com/en/api).  
+Track live cryptocurrency prices, visualize historical trends with charts, and convert between multiple currencies.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- **Live Price Updates** – View real-time prices of cryptocurrencies.  
+- **Interactive Chart** – Historical price data displayed using Google Charts.  
+- **Currency Converter** – Switch between USD, EUR, INR, and NPR.  
+- **Search** – Quickly find any cryptocurrency.  
+- **Market Rank** – See the global market rank of each coin.  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Tech Stack
+
+- **React** – Frontend UI  
+- **Vite** – Fast build tool  
+- **Tailwind CSS** – Styling  
+- **Google Charts** – Interactive line charts for historical data  
