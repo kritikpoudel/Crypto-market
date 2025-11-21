@@ -43,7 +43,12 @@ export default function Home() {
             onChange={inputHandler}
             required
             value={input}
+            list="coinlist"
           />
+          <datalist id="coinlist">
+            {allCoin.map((item,index)=>(<option key={index} value={item.name}/>))}
+
+          </datalist>
           <button
             className="border-none bg-green-800 text-white text-lg py-2.5 px-7.5 rounded-lg cursor-pointer"
             type="submit"
